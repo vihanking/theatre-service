@@ -26,4 +26,9 @@ public class TheatreController {
     public Theatre getTheatreByName(@PathVariable("name") String name){
         return thaetreService.getTheatreByName(name);
     }
+
+    @PutMapping
+    public Theatre UpdateAdress(){
+        return new Theatre();
+    }
 }
