@@ -21,4 +21,9 @@ public class TheatreController {
     public Theatre getTheatreById(@PathVariable("id") int id){
         return thaetreService.getTheatreById(id);
     }
+
+    @GetMapping("/getTheatreByName/{name}")
+    public Theatre getTheatreByName(@PathVariable("name") String name){
+        return thaetreService.getTheatreByName(name);
+    }
 }

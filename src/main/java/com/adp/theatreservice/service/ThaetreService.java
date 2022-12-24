@@ -27,4 +27,8 @@ public class ThaetreService {
             throw new TheatreNotFoundException(id);
         }
     }
+
+    public Theatre getTheatreByName(String name) {
+        return theatreRepository.findByName(name);
+    }
 }
