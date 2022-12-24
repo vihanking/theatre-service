@@ -20,12 +20,7 @@ public class ThaetreService {
 
     public Theatre getTheatreById(int id) {
         Optional<Theatre> optionalTheatre=theatreRepository.findById(id);
-        if(optionalTheatre.isPresent()){
-            return optionalTheatre.get();
-        }
-        else{
-            throw new TheatreNotFoundException(id);
-        }
+        return optionalTheatre.get();
     }
 
     public Theatre getTheatreByName(String name) {
