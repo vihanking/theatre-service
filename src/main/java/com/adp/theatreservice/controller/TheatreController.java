@@ -29,6 +29,7 @@ public class TheatreController {
 
     @PutMapping
     public Theatre UpdateAdress(){
+        System.out.println("Dumbu ga dayyam");
         return new Theatre();
     }
 }
